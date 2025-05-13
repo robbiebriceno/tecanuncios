@@ -30,35 +30,22 @@ Tecanuncios es una plataforma web diseñada para gestionar y mostrar anuncios de
 git clone https://github.com/robbiebriceno/tecanuncios.git
 ```
 
-2. Instalar dependencias del frontend:
-```bash
-cd tecanuncios/frontend
-npm install
-```
+
 
 3. Instalar dependencias del backend:
 ```bash
-cd ../backend
 python -m venv venv
-source venv/bin/activate  # En Windows: venv\Scripts\activate
+venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-4. Crear un archivo .env con las siguientes variables:
-```env
-DEBUG=True
-SECRET_KEY=tu_django_secret_key
-DATABASE_URL=tu_postgresql_url
-CLOUDINARY_URL=tu_cloudinary_url
-```
+
 
 5. Iniciar los servidores:
 ```bash
 # Terminal 1 (Backend)
 python manage.py runserver
 
-# Terminal 2 (Frontend)
-npm start
 ```
 
 ## 🔧 Uso
