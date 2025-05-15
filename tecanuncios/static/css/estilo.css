@@ -8,6 +8,7 @@
 }
 
 body{
+    /*background-color: #ACF7FF;*/
     background-image: url(FONDO_PROYECT.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -17,8 +18,29 @@ body{
     justify-content: center;
     flex-direction: column;
     height: 100vh;
+    overflow: hidden;
 }
 
+#bouncing-bubble {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1; 
+}
+
+/* Burbujas */
+.circle {
+  position: absolute;
+  background-color: #6CE5D9;
+  border-radius: 50%;
+  box-shadow: 2px 2px 0 #49C3B7;
+  opacity: 0.9;
+  width: 80px;
+  height: 80px;
+}
 
 .container{
     background-color: #49C3B8;
@@ -211,3 +233,4 @@ body{
 .container.active .toggle-right{
     transform: translateX(200%);
 }
+
